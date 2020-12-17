@@ -8,7 +8,7 @@ export default function DefaultMain () {
   return (
     <div className='DefaultMain__div'>
       <header className='DefaultMain-header'>
-				<h1>FIDO & FIFO ADOPTION</h1>
+				<h1>Dustys Lil Shop of Pets</h1>
 			</header>
       {
         <>

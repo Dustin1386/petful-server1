@@ -15,15 +15,21 @@ export default ApiContext
 export class ApiProvider extends Component {
   constructor(props) {
     super(props);
-    this.state = {catsList: [], dogsList: [], adopters: [] };
+    this.state = {
+      catsList: [], 
+      dogsList: [], 
+      adopters: [],
+      petType: "cats"
+    };
    
   }
 
   setAdopters = adopters => {
 		this.setState({ 
-      adopters: [...this.state.adopters,adopters]
+      adopters: adopters
      });
 };
+
 
 setCatList = catsList => {
   this.setState({ catsList });

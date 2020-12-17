@@ -28,7 +28,7 @@ export default class SignupMain extends Component {
 		return (
 			<div className='SignupMain__div'>
 				<h2>FIFO Adoption</h2>
-				<p>Fido is a dog's name, but FIFO stands for "first in first out". To ensure our lovely animals get a home sooner than later, FIDO & FIFO does adoptions on a first-in, first-out basis; the cat or dog that has been with us longest will be the first to go home.</p>
+				<p>"first in first out".</p>
 				<p>If you'd like to join the list, please enter your name below. Depending on your choice of dog or cat, you'll be redirected to view the adoptees in line. Please note that you cannot view the animals without signing up on the list.</p>
 				<form onSubmit={e => this.handleSubmit(e)}>
 					<h3>Join the Queue</h3>

@@ -18,7 +18,7 @@ export default class adoptCat extends Component {
 		console.log(petListLength);
 		//if we're at the last pet in the array, loop
 		if (num === 1 && petListLength - 1 === this.state.index) {
-			//essentially resets state
+			//resets state
 			num = -this.state.index;
 		}
 		this.setState({
@@ -46,8 +46,8 @@ export default class adoptCat extends Component {
 		);
 
 		this.interval = setInterval(() => {
-			if(petType){this.handleAdopt(petType);
-			}
+		 this.handleAdopt(petType);
+		
 		}, 3000);
 	};
 	componentWillUnmount() {
@@ -60,16 +60,15 @@ export default class adoptCat extends Component {
 		let index = this.state.index;
 		let petList =
 			petType === "dogs" ? this.context.dogsList : this.context.catsList || [];
-		//  const dogsList = this.context.dogsList || [];
-		//   console.log(dogsList)
+		
 		let currPet = petList[index] || {};
-		// let length = this.context.adopters.length || 0;
+		let length = this.context.adopters.length || 0;
 	
 		let adoptionStatus;
 		let color;
-		// if (length === 1) {
-		// 	clearInterval(this.interval);
-		// }
+		if (length === 1) {
+			clearInterval(this.interval);
+		}
 		//if not adopted and front of the array, return 'available'
 		if (index === 0) {
 			adoptionStatus = "Available";
@@ -115,9 +114,10 @@ export default class adoptCat extends Component {
 								</button>
 							</div>
 							<h3>
-								{/* {length === 1 && index === 0
+								{this.context.adopters.length === 1
 									? `Congratulations on your new pet, ${currPet.name}!`
-									: currPet.name} */}
+									: currPet.name}
+
 							</h3>
 							<ul>
 								<li>

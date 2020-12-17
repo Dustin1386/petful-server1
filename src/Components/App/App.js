@@ -31,7 +31,7 @@ export default class App extends Component {
 			<div className='App'>
 				<nav>
 					<Link to='/'>
-						<i className='fas fa-paw'></i> FIDO & FIFO
+						<i className='fas fa-paw'></i> Dustys Lil Shop of Pets
 					</Link>{" "}
 					{this.renderNavRoutes()}
 				</nav>
