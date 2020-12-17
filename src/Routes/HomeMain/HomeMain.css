@@ -1,0 +1,29 @@
+.photoLink {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-emphasis: outline;
+    opacity: 0.5;
+    margin: 0.5rem 0;
+  }
+  
+  .LinkContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dog {
+    /* background: center/100% url('./Photo-by-nrd-on-Unsplash.jpg'); */
+    background-repeat: no-repeat;
+  }
+  
+  .cat {
+    /* background: center/100% url('./Photo-by-Oleg-Ivanov-on-Unsplash.jpg'); */
+    background-repeat: no-repeat;
+  }
+  
+  .photoLink:hover {
+    opacity: 0.9;
+  }
